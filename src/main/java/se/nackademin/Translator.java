@@ -20,7 +20,7 @@ public class Translator {
         initializeVerbsValues();
     }
     
-    public void initializeAdjectiveValues(){
+    private void initializeAdjectiveValues(){
         listOfAdjectives.add("stor");
         listOfAdjectives.add("liten");
         listOfAdjectives.add("stark");
@@ -32,7 +32,7 @@ public class Translator {
         listOfAdjectives.add("ljus");
         listOfAdjectives.add("mörk");
     }
-    public void initializeSubstantiveValues(){
+    private void initializeSubstantiveValues(){
         listOfSubstantives.add("en lönehöjning");
         listOfSubstantives.add("en lönesänkning");
         listOfSubstantives.add("en fotbojja");
@@ -44,7 +44,7 @@ public class Translator {
         listOfSubstantives.add("en dator");
         listOfSubstantives.add("ett golv");
     }
-    public void initializeVerbsValues(){
+    private void initializeVerbsValues(){
         listOfVerbs.add("springa");
         listOfVerbs.add("ljuga");
         listOfVerbs.add("flyga");
@@ -57,7 +57,7 @@ public class Translator {
         listOfVerbs.add("resa");
     }
     public String fetchAdjective(int number){
-        System.out.println("testing number:"+number);
+//        System.out.println("testing number:"+number);
         return listOfAdjectives.get(number);
     }
     public String fetchSubstantive(int number){

@@ -71,9 +71,12 @@ public class MagicNumbers {
         doubleNumber=number;
         doubleNumber=Math.sqrt(number);
         
+        
+        
         while (number > 9){
             doubleNumber/=2;
         }
+        
         return Math.round((int)doubleNumber);
     }
 

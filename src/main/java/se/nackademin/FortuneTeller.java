@@ -1,7 +1,6 @@
 package se.nackademin;
 
 import se.nackademin.gui.FortuneTellerGui;
-import se.nackademin.Translator;
 
 public class FortuneTeller {
     MagicNumbers magicNumbers;
@@ -20,17 +19,14 @@ public class FortuneTeller {
      */
     public String calculate() {
         String str;
-        System.out.println("testing number");
-        int number=magicNumbers.calculateA();
-        //str="hej";
-        str=translator.fetchAdjective(2);
-        
-        //String calculateA=translator.fetchAdjective(number);
-        //str="hej";
-        //str="Din framtid är "+ translator.fetchAdjective(magicNumbers.calculateA());
-        //TODO: Implement
-        //return "Not implemented!";
-        //String str="Din framtid är " + translator.fetchAdjective(magicNumbers.calculateA())+ ". Du borde sluta "+translator.fetchVerb(magicNumbers.calculateB())+". Vi ser att du snart kommer att skaffa "+translator.fetchSubstantive(magicNumbers.calculateC())+". Snart kommer du vilja "+translator.fetchVerb(magicNumbers.calculateD())+", men då är det viktigt att du är "+translator.fetchAdjective(magicNumbers.calculateE())+".";
+        String strA = translator.fetchAdjective(magicNumbers.calculateA());
+        String strB = translator.fetchVerb(magicNumbers.calculateB());
+        String strC = translator.fetchSubstantive(magicNumbers.calculateC());
+        String strD = translator.fetchVerb(magicNumbers.calculateD());
+        String strE = translator.fetchAdjective(magicNumbers.calculateE());
+                
+        str="Din framtid är " + strA+ ". Du borde sluta "+strB+". Vi ser att du snart kommer att skaffa "+strC+". Snart kommer du vilja "+strD+", men då är det viktigt att du är "+strE+".";
+        System.out.println("str är nu:"+str);
         return str;
     }
 
@@ -41,7 +37,7 @@ public class FortuneTeller {
     FortuneTeller() {
         fortuneTellerGui = new FortuneTellerGui(this);
         magicNumbers = new MagicNumbers();
-
+        translator = new Translator();
     }
 
     public boolean setName(String name) {
