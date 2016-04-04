@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="se.nackademin.MagicNumberTest" time="0.104" tests="13" errors="0" skipped="0" failures="1">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="se.nackademin.MagicNumberTest" time="0.097" tests="13" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/i386"/>
@@ -64,16 +64,12 @@
   <testcase name="testCDependsOnHeight" classname="se.nackademin.MagicNumberTest" time="0"/>
   <testcase name="testBDependsOnIncome" classname="se.nackademin.MagicNumberTest" time="0"/>
   <testcase name="testADependsOnName" classname="se.nackademin.MagicNumberTest" time="0"/>
-  <testcase name="testCDependsOnAge" classname="se.nackademin.MagicNumberTest" time="0"/>
+  <testcase name="testCDependsOnAge" classname="se.nackademin.MagicNumberTest" time="0.001"/>
   <testcase name="testA" classname="se.nackademin.MagicNumberTest" time="0"/>
   <testcase name="testB" classname="se.nackademin.MagicNumberTest" time="0"/>
-  <testcase name="testC" classname="se.nackademin.MagicNumberTest" time="0"/>
+  <testcase name="testC" classname="se.nackademin.MagicNumberTest" time="0.001"/>
   <testcase name="testD" classname="se.nackademin.MagicNumberTest" time="0"/>
-  <testcase name="testE" classname="se.nackademin.MagicNumberTest" time="0.014">
-    <failure message="E is not calculated correctly expected:&lt;9&gt; but was:&lt;0&gt;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: E is not calculated correctly expected:<9> but was:<0>
-	at se.nackademin.MagicNumberTest.testE(MagicNumberTest.java:52)
-]]></failure>
-  </testcase>
-  <testcase name="testADependsOnAge" classname="se.nackademin.MagicNumberTest" time="0.001"/>
-  <testcase name="testDWithAGreaterThan5" classname="se.nackademin.MagicNumberTest" time="0"/>
+  <testcase name="testE" classname="se.nackademin.MagicNumberTest" time="0"/>
+  <testcase name="testADependsOnAge" classname="se.nackademin.MagicNumberTest" time="0"/>
+  <testcase name="testDWithAGreaterThan5" classname="se.nackademin.MagicNumberTest" time="0.001"/>
 </testsuite>

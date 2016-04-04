@@ -73,7 +73,7 @@ public class MagicNumbers {
         
         
         
-        while (number > 9){
+        while (doubleNumber > 10){
             doubleNumber/=2;
         }
         
